@@ -2,8 +2,8 @@ import gleam/io
 import simplifile
 
 pub fn main() {
-  let numbers_filepath = "./numbers.txt"
   // relative to the projects root
+  let numbers_filepath = "./numbers.txt"
 
   case simplifile.read(from: numbers_filepath) {
     Ok(numbers) -> io.println(numbers)
